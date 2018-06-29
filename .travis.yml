@@ -90,4 +90,5 @@ install:
 
 script:
   - npm test
+  - node /tmp/paramedic/main.js --config pr/$PLATFORM --plugin $(pwd) --buildName travis-plugin-file-$TRAVIS_JOB_NUMBER
   # - node /tmp/paramedic/main.js --config pr/$PLATFORM --plugin $(pwd) --shouldUseSauce --buildName travis-plugin-file-$TRAVIS_JOB_NUMBER
